@@ -1,0 +1,108 @@
+/* sticky menu */
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: smoothScroll 1s forwards;
+    background-color: var(--white);
+    z-index: 999;
+}
+@keyframes smothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.is-sticky .navbar .navbar-brand a,
+.is-sticky .navbar .offcanvas-body a{
+    color: var(--black) !important;
+}
+
+.is-sticky .toggle-btn{
+    background-color: var(--primaryClr) !important;
+}
+
+
+
+header{ /* este es el color del header */
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    padding: 12px 0;
+    width: 100%;
+}
+
+header .navbar .navbar-brand a{ /* este es el color del logo */
+    font-size: 22px;
+    color: var(--white);
+    line-height: 150%;
+    font-family: var(--fontFamily1);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+header .navbar .offcanvas-body a{ /* este es el color de los links del menu en mobile */
+    font-size: var(--bodyText);
+    color: var(--white) !important;
+    line-height: 150%;
+    font-family: var(--fontFamily);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+header .navbar .offcanvas-body a:hover{ /* este es el hover de los links del menu en mobile */
+    color: var(--primaryClr) !important;
+}
+
+header .navbar .offcanvas-body .dropdown-menu{ /* este es el color del dropdown */
+    min-width: 12rem;
+}
+
+header .navbar .offcanvas-body .dropdown-menu .dropdown-item{  /* este es el color de los links del dropdown */
+    color:var(--black) !important  
+}
+
+@media only screen and (max-width: 991px){ /* 991px porque es el breakpoint de bootstrap para el menu en mobile */
+    header .navbar .toggle_btn {
+        font-size: var(--bodyText);
+        color: var(--white);
+        border: 2px solid var(--white);	
+        padding: 7px 10px;
+
+    }
+
+    .is-sticky .navbar .toggle_btn {
+
+        color: var(--primaryClr);
+        border: 2px solid var(--primaryClr);	
+        
+
+    }
+
+    .offcanvas-body .logo{
+        font-size: 26px;
+        color: var(--black) !important;
+        font-family: var(--fontFamily1);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .offcanvas-body .nav-link {
+        padding: 12px 0px;
+        color: var(--black);
+    }
+
+    .offcanvas-body .dropdown-item{
+        padding: 12px 10px;
+        color: var(--black);    
+    }
+
+}
