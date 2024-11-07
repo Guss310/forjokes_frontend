@@ -2,12 +2,16 @@
   "name": "typeforfun_frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
@@ -39,4 +43,5 @@
       "last 1 safari version"
     ]
   }
+  
 }

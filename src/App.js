@@ -9,6 +9,7 @@ import Profile from '../src/pages/Profile';
 
 
 function App() {
+
   return (
     <div>
       <Header />

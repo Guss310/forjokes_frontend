@@ -11,14 +11,6 @@ if (isLoading) {
     return <div>Loading...</div>
 }
 
-/* return (isAuthenticated && (
-    <div>
-        <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-    </div>
-    ));
-}; */
 
 return (
     isAuthenticated && (
@@ -31,6 +23,7 @@ return (
               <Card.Body>
                 <Card.Title>{user.name}</Card.Title>
                 <Card.Text>{user.email}</Card.Text>
+                {/* <Card.Link href="/profile/edit">Editar perfil</Card.Link> */}
               </Card.Body>
             </Card>
           </Container>

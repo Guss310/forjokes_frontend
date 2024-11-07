@@ -67,9 +67,13 @@ const Header = () => {
                         title="Sesión" 
                         id={`offcanvasNavbarDropdown-expand-lg`}
                     >
+                        
                         <NavDropdown.Item as={Link} to="/profile">Perfil</NavDropdown.Item>
-                        {isAuthenticated ? (<NavDropdown.Item href="#action4" onClick={() => logout({ returnTo: window.location.origin})} >Cerrar sesion</NavDropdown.Item>)
+                        {isAuthenticated ? (<NavDropdown.Item href="#action4" onClick={() => logout({ returnTo: window.location.origin})} >Cerrar sesion</NavDropdown.Item>) 
                         : (<NavDropdown.Item href="#action4" onClick={loginWithRedirect} >Crea tu cuenta</NavDropdown.Item>)}
+
+                        {isAuthenticated ? (<NavDropdown.Item as={Link} to="/blog">Publicar <i class="bi bi-plus-circle"></i></NavDropdown.Item>) 
+                        : true}
         
                     </NavDropdown>
                     </Nav>
