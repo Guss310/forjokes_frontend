@@ -1,10 +1,10 @@
-footer{
+footer{ /* This is the footer component */
     background: rgb(14, 6, 0);
     width: 100%;
     padding: 5px;
 }
 
-footer h4 {
+footer h4 { /* This is the title of the footer */
     font-size:var (--subTitle);
     color:white;
     line-height: 150%;
@@ -16,7 +16,7 @@ footer h4 {
 footer p,
 footer a,
 footer u,
-footer span {
+footer span { /* This is the text of the footer */
     margin: 0;
     font-size: var(--bodyFont);
     color: white;
@@ -25,17 +25,7 @@ footer span {
 
 }
 
-footer .quick_links .list-group .list-group-item {
-    background-color: none;
-    padding: 0;
-    margin-bottom: 5px;
-    font-size: var(--bodyFont);
-    line-height: 150%;
-    color: #b4b4b4;
-    font-weight: bold;
-}
-
-footer .quick_links .list-group .list-group-item {
+footer .quick_links .list-group .list-group-item { /* This is the color of the links in the footer */
     background-color: none;
     padding: 0;
     margin-bottom: 5px;

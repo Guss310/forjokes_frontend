@@ -1,17 +1,29 @@
-.primaryBtn{
-    background: var(--primaryClr);
-    padding: 8px 15px;
-    font-size: var(--bodyText);
-    color:var(--white);
-    text-align: center;
-    position: relative;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 4px;
+
+
+
+.primaryBtn{ 
+    background: var(--primaryClr) !important;
+    padding: 8px 15px !important;
+    font-size: var(--bodyText) !important;
+    color: var(--white) !important;
+    text-align: center !important;
+    position: relative !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.2s ease-in-out !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
 }
 
 .primaryBtn:hover{
     transform: translateY(-3px);
 }
+
+.feed-container {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 30px;
+
+  }
+  

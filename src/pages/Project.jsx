@@ -1,7 +1,11 @@
+// This page is a simple page that shows the project information.
+
+// This dependencies are used in this file.
 import React from "react";
 import { Container, Card } from 'react-bootstrap';
 import Banner from '../../src/assests/images/fondo-banner-naranja.jpg'
 
+// This is the main function of the Project page.
 export const Project = () => {
     return (
         <div style={{ backgroundColor: '#e0f7fa', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>

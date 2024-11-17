@@ -2,6 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import 'bootstrap/dist/css/bootstrap.min.css'; /* From: https://react-bootstrap.netlify.app/docs/getting-started/introduction */
 
+/* this is the root element, it is used to define global CSS variables */
 :root {
   --primaryClr: #fe4e37;
   --secondaryClr: #fffaf9;
@@ -18,6 +19,7 @@
   --fontFamily1: "Libre Baskerville", serif;
 }
 
+/* This is a CSS reset, it is used to remove default browser styling */
 /* From: https://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

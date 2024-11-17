@@ -9,7 +9,7 @@
     background-color: var(--white);
     z-index: 999;
 }
-@keyframes smothScroll { /* esto es para que el menu se vea mas suave al hacer scroll */
+@keyframes smothScroll { /* this is the animation for the sticky menu, that makes it smooth */
     0% {
         transform: translateY(-40px);
     }
@@ -38,7 +38,7 @@ header{ /* este es el color del header */
     width: 100%;
 }
 
-header .navbar .navbar-brand a{ /* este es el color del logo */
+header .navbar .navbar-brand a{ /* this is the color of the logo */
     font-size: 22px;
     color: var(--white);
     line-height: 150%;
@@ -49,7 +49,7 @@ header .navbar .navbar-brand a{ /* este es el color del logo */
 }
 
 
-header .navbar .offcanvas-body a{ /* este es el color de los links del menu en mobile */
+header .navbar .offcanvas-body a{ /* This is the color of the links in the menu in mobile */
     font-size: var(--bodyText);
     color: var(--white) !important;
     line-height: 150%;
@@ -58,19 +58,19 @@ header .navbar .offcanvas-body a{ /* este es el color de los links del menu en m
     text-transform: capitalize;
 }
 
-header .navbar .offcanvas-body a:hover{ /* este es el hover de los links del menu en mobile */
+header .navbar .offcanvas-body a:hover{ /* This is the color of the links in the menu in mobile when hover */
     color: var(--primaryClr) !important;
 }
 
-header .navbar .offcanvas-body .dropdown-menu{ /* este es el color del dropdown */
+header .navbar .offcanvas-body .dropdown-menu{ /* This is the color of the dropdown menu */
     min-width: 12rem;
 }
 
-header .navbar .offcanvas-body .dropdown-menu .dropdown-item{  /* este es el color de los links del dropdown */
+header .navbar .offcanvas-body .dropdown-menu .dropdown-item{  /* this is the color of the dropdown items */
     color:var(--black) !important  
 }
 
-@media only screen and (max-width: 991px){ /* 991px porque es el breakpoint de bootstrap para el menu en mobile */
+@media only screen and (max-width: 991px){ /* 991px because this is the breakpoint for the mobile menu of bootstrap */
     header .navbar .toggle_btn {
         font-size: var(--bodyText);
         color: var(--white);

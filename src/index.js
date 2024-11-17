@@ -1,3 +1,6 @@
+// This is the initial code for App.js. It is used to display the routes of the application.
+
+// This dependencies are used in this file.
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -5,6 +8,11 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
+
+// This use Component Composition to render the App component.
+// The BrowserRouter is used to wrap the App component. This is used to enable the routing in the application.
+// The Auth0Provider is used to wrap the BrowserRouter component. This is used to enable the authentication in the application.
+// The App component is used to display the routes of the application.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,8 +27,10 @@ root.render(
     >
 
       <BrowserRouter>
+      
+
         <App />
       </BrowserRouter>
-    </Auth0Provider>
+    </Auth0Provider> 
   </React.StrictMode>
 );

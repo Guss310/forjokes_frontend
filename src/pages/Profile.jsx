@@ -1,17 +1,20 @@
+// This is the initial code for the Profile component. It is used to display the user's profile.
+
+// This dependencies are used in this file.
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Card, Container } from 'react-bootstrap';
 
 
+// This is the main function of the Profile page.
 export const Profile = () => {
-    const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
+  if (isLoading) {
+      return <div>Loading...</div>
+  }
 
-if (isLoading) {
-    return <div>Loading...</div>
-}
-
-
+// This is the return of the Profile component.
 return (
     isAuthenticated && (
       <div style={{ backgroundColor: '#e0f7fa', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>

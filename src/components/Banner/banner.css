@@ -1,23 +1,23 @@
-.slider{
+.slider{ /* This is the slider */
     z-index: 99;
 
 }
 
-.slider .carousel{
+.slider .carousel{ /* This is the carousel */
     position: relative;
 }
 
-.slider .carousel .carousel-item{
+.slider .carousel .carousel-item{ /* This is the carousel item */
     width: 100%;
     height: 100vh;
 }
 
-.slider .carousel .carousel-item .carousel-caption{
+.slider .carousel .carousel-item .carousel-caption{ /* This is the carousel caption */
     z-index: 99;
     bottom: 35%;
 }
 
-.slider .carousel .carousel-item .carousel-caption h5{
+.slider .carousel .carousel-item .carousel-caption h5{ /* This is the title of the carousel */
     font-size: 55px;
     color: var(--white);
     line-height: 140%;
@@ -27,11 +27,11 @@
 
 }
 
-.slider .carousel .carousel-item .carousel-caption h5  span{
+.slider .carousel .carousel-item .carousel-caption h5  span{ /* This is the span of the title of the carousel */
     display: block;
 }
 
-.slider .carousel .carousel-item .carousel-caption .slider_des p{
+.slider .carousel .carousel-item .carousel-caption .slider_des p{ /* This is the description of the carousel */	
     font-size: var(--subTitle);
     color: var(--white);
     line-height: 150%;
@@ -41,7 +41,7 @@
     padding-top: 20px;
 }
 
-.slider .carousel::after{
+.slider .carousel::after{ /* This is the after of the carousel */
     content: '';
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -53,7 +53,7 @@
 }
 
 .slider .carousel .carousel-control-prev,
-.slider .carousel .carousel-control-next{
+.slider .carousel .carousel-control-next{ /* This is the carousel control */
     z-index: 100;
     position: absolute; 
     top: 45%;
@@ -69,7 +69,7 @@
 }
 
 .slider .carousel .carousel-control-prev:hover,
-.slider .carousel .carousel-control-next:hover{
+.slider .carousel .carousel-control-next:hover{ /* This is the carousel control when hover */
     box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.267);
     
 }
@@ -77,7 +77,7 @@
 .slider .carousel .carousel-control-prev::after,
 .slider .carousel .carousel-control-next::after,
 .slider .carousel .carousel-control-prev::before,
-.slider .carousel .carousel-control-next::before {
+.slider .carousel .carousel-control-next::before { /* This is the carousel control after and before */
     content: "";
     position: absolute;
     left: 43%;
@@ -91,28 +91,28 @@
 
 /* Prev Arrow */
 
-.slider .carousel .carousel-control-prev {
+.slider .carousel .carousel-control-prev { /* This is the carousel control prev */
     left: 40px;
 }
-.slider .carousel .carousel-control-prev::before {
+.slider .carousel .carousel-control-prev::before { /* This is the carousel control prev before */
     transform: rotate(45deg);
     top: 24%;
 }
-.slider .carousel .carousel-control-prev::after {
+.slider .carousel .carousel-control-prev::after { /* This is the carousel control prev after */
     transform: rotate(-45deg);
     bottom: 24%;
 }
 
 /* Next Arrow */
 
-.slider .carousel .carousel-control-next {
+.slider .carousel .carousel-control-next { /* This is the carousel control next */
     right: 40px;
 }
-.slider .carousel .carousel-control-next::before {
+.slider .carousel .carousel-control-next::before { /* This is the carousel control next before */
     transform: rotate(-45deg);
     top: 24%;
 }
-.slider .carousel .carousel-control-next::after { 
+.slider .carousel .carousel-control-next::after {  /* This is the carousel control next after */
     left: auto;
     right: 43%;
     transform: rotate(45deg);
@@ -121,68 +121,68 @@
 
 
 .slider .carousel .carousel-control-prev span,
-.slider .carousel .carousel-control-next span{
+.slider .carousel .carousel-control-next span{ /* This is the carousel control prev and next span */
     display: none;
 }
 
 
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991px){  /* 991px because this is the breakpoint for the mobile menu of bootstrap */
 
-    .slider .carousel .carousel-item .carousel-caption{
+    .slider .carousel .carousel-item .carousel-caption{ /* This is the carousel caption */
         bottom: 18%;
     }
 
-    .slider .carousel .carousel-item .carousel-caption h5{
+    .slider .carousel .carousel-item .carousel-caption h5{ /* This is the title of the carousel */
         font-size: 35px;
     }
     
-    .slider .carousel .carousel-item .carousel-caption .slider_des p{
+    .slider .carousel .carousel-item .carousel-caption .slider_des p{ /* This is the description of the carousel */
         font-size: 16px;
     }
 
-    .slider .carousel .carousel-item{
+    .slider .carousel .carousel-item{ /* This is the carousel item */
         width: 100%;
         height: 100%;
     }
 
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px){ /* 767px because this is the breakpoint for the mobile menu of bootstrap */
 
-    .slider .carousel .carousel-item img{
+    .slider .carousel .carousel-item img{ /* This is the carousel item img */
         height: 350px;
         object-fit: fill;
 
     }
 
-    .slider .carousel .carousel-item .carousel-caption{
+    .slider .carousel .carousel-item .carousel-caption{ /* This is the carousel caption */
         bottom: 22%;
         padding: 0 0 20px 0;
         z-index: 9;
     }
 
-    .slider .carousel .carousel-item .carousel-caption h5{
+    .slider .carousel .carousel-item .carousel-caption h5{ /* This is the title of the carousel */
         font-size: 26px;
     }
 
-    .slider .carousel .carousel-item .carousel-caption h5 span{
+    .slider .carousel .carousel-item .carousel-caption h5 span{ /* This is the span of the title of the carousel */
         display: inline-block;
     }
     
-    .slider .carousel .carousel-item .carousel-caption .slider_des p{
+    .slider .carousel .carousel-item .carousel-caption .slider_des p{ /* This is the description of the carousel */
         font-size: 14px;
     }
 
     .slider .carousel .carousel-control-next,
-    .slider .carousel .carousel-control-prev{
+    .slider .carousel .carousel-control-prev{ /* This is the carousel control next and prev */
         width: 40px;
         height: 40px;
     }
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:420px){ /* 420px because this is the breakpoint for the mobile menu of bootstrap */
 
-    .slider .carousel .carousel-item .carousel-caption{
+    .slider .carousel .carousel-item .carousel-caption{ /* This is the carousel caption */
         right: 3%;
         left: 3%;
         bottom: 16%;
@@ -191,7 +191,7 @@
     }
     
     .slider .carousel .carousel-control-next,
-    .slider .carousel .carousel-control-prev{
+    .slider .carousel .carousel-control-prev{ /* This is the carousel control next and prev */
         width: 30px;
         height: 30px;
     }
